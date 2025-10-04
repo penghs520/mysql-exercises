@@ -1,0 +1,6 @@
+# MySQL数据文件
+*.sql~
+*.swp
+
+# Docker
+.env
