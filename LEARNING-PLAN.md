@@ -184,7 +184,7 @@
 docker-compose up -d
 
 # 连接数据库
-docker exec -it mysql-study mysql -uroot -proot study_db
+docker exec -it mysql-study mysql -uroot -proot study_db --default-character-set=utf8mb4
 
 # 查看所有表
 SHOW TABLES;

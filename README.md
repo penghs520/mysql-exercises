@@ -26,10 +26,10 @@ docker logs -f mysql-study
 
 ```bash
 # 方式1：使用docker exec
-docker exec -it mysql-study mysql -uroot -proot study_db
+docker exec -it mysql-study mysql -uroot -proot study_db --default-character-set=utf8mb4
 
 # 方式2：从主机连接
-mysql -h 127.0.0.1 -P 3307 -uroot -proot study_db
+mysql -h 127.0.0.1 -P 3307 -uroot -proot study_db --default-character-set=utf8mb4
 ```
 
 ### 3. 验证数据

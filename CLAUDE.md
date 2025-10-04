@@ -25,10 +25,10 @@ docker run -d -p 3307:3306 --name mysql-study mysql-study
 ### 连接到MySQL
 ```bash
 # 使用docker exec进入容器
-docker exec -it mysql-study mysql -uroot -proot
+docker exec -it mysql-study mysql -uroot -proot --default-character-set=utf8mb4
 
 # 或使用study_user登录
-docker exec -it mysql-study mysql -ustudy_user -pstudy123 study_db
+docker exec -it mysql-study mysql -ustudy_user -pstudy123 study_db --default-character-set=utf8mb4
 ```
 
 ### 停止和清理
@@ -95,7 +95,7 @@ docker-compose down -v
 docker-compose up -d
 
 # 2. 连接数据库
-docker exec -it mysql-study mysql -uroot -proot study_db
+docker exec -it mysql-study mysql -uroot -proot study_db --default-character-set=utf8mb4
 
 # 3. 开始第一阶段练习
 # 打开 exercises/01-基础查询.md
